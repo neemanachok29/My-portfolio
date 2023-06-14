@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    background-color: black;
+    /* padding: 10rem; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1{
+    color: white;
+font-family: 'Bagel Fat One', cursive;
+}
+h2{
+    color: rgb(37, 98, 98);
+}
+p{
+   color: white; 
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(7, 8, 8);
+  }
+  
+.flex-container > div {
+  background-color: #D65DB1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+img{
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    /* width: 40%; */
+    border-radius: 10px;
+    height: 70%;    
+  }
+
+.container{
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  
+}
+  /* div{
+    width:300px
+    padding: 25px
+  } */
+
+  @media (max-width: 800px){
+
+    .container{
+      padding: 0;
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+
+    .container-left{
+      text-align: center;
+      padding: 10px;
+    }
+
+    .flex-container {
+      flex-direction: column;
+    }
+  }
